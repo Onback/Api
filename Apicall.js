@@ -62,9 +62,9 @@ fetch('https://api.streamtape.com/file/listfolder?login=0287aca2ef38b0d9a210&key
     
     console.log(`Download ticket for ${fileName}: ${downloadTicket}`);
 
-    //const thirdApiUrl = `https://cors-anywhere.herokuapp.com/https://api.streamtape.com/file/dl?file=${fileId}&ticket=${downloadTicket}`;
+    const thirdApiUrl = `https://cors-anywhere.herokuapp.com/https://api.streamtape.com/file/dl?file=${fileId}&ticket=${downloadTicket}`;
      
-     const thirdApiUrl = `http://themeninja.c0m.in/cors-proxy/proxy.php?url=https://api.streamtape.com/file/dl?file=${fileId}&ticket=${downloadTicket}`;
+    // const thirdApiUrl = `http://themeninja.c0m.in/cors-proxy/proxy.php?url=https://api.streamtape.com/file/dl?file=${fileId}&ticket=${downloadTicket}`;
      
      console.log(`Third API URL for ${fileName}: ${thirdApiUrl}`);
 
